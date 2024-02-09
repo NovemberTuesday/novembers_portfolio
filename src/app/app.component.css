@@ -20,19 +20,17 @@
 }
 
 .text-over-image {
-  position: absolute;
-  top: 35%;
-  /* Adjust as needed */
-  left: 33%;
-  /* Adjust as needed */
+  position: relative;
+  top: 20%;
+  left: 36%;
   transform: translate(-50%, -50%);
   font-family: 'Gabriola';
   font-size: 22px;
   color: white;
-  margin-top: 30px;
-  margin-left: 80px;
+  margin-top: 2px;
+  margin-left: 100px;
   z-index: 1;
-  /* Ensure it's above the image */
+ 
 }
 
 .para-1 {
@@ -41,7 +39,7 @@
 }
 
 .para-2 {
-  margin-top: 180px;
+  margin-top: 5px;
   margin-left: 10px;
   font-family: 'Bradley Hand ITC';
   font-size: 18px;
@@ -123,6 +121,7 @@ nav {
   color: #fefcfc;
   /* Default link color */
   padding: 20px;
+  white-space: nowrap; 
   /* Adjust padding as needed */
 }
 
@@ -137,5 +136,83 @@ nav {
 .horizontal-nav a:hover {
   color: #000;
   /* Change color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .bg-1 {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .intro-heading {
+    font-size: 42px; /* Decrease font size for smaller screens */
+    margin-top: 30px; /* Adjust margin top */
+    margin-left: 20px; /* Adjust margin left */
+  }
+  
+  .text-over-image {
+    font-size: 18px; /* Decrease font size for smaller screens */
+    margin-top: 20px; /* Adjust margin top */
+    margin-left: 20px; /* Adjust margin left */
+    position: relative;
+  }
+  
+  .para-1 {
+    margin-top: 20px; /* Adjust margin top */
+    margin-left: 20px; /* Adjust margin left */
+  }
+  
+  .para-2 {
+    margin-top: 100px; /* Adjust margin top */
+    margin-left: 20px; /* Adjust margin left */
+  }
+  
+  .self-img {
+    height: 300px; /* Decrease image height for smaller screens */
+    width: 250px; /* Decrease image width for smaller screens */
+  }
+  
+  nav {
+    padding-left: 20px; /* Adjust padding left for smaller screens */
+  }
+  .horizontal-nav a {
+    padding: 10px; /* Decrease padding for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .bg-1 {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+  
+  .intro-heading {
+    font-size: 32px; /* Decrease font size for very small screens */
+  }
+  
+  .text-over-image {
+    position: relative;
+    font-size: 16px; /* Decrease font size for very small screens */
+  }
+  
+  .para-1 {
+    margin-top: 10px; /* Further adjust margin top for very small screens */
+  }
+  
+  .para-2 {
+    margin-top: 50px; /* Further adjust margin top for very small screens */
+  }
+  
+  .self-img {
+    height: 200px; /* Decrease image height for very small screens */
+    width: 180px; /* Decrease image width for very small screens */
+  }
+  
+  nav {
+    padding-left: 10px; /* Further adjust padding left for very small screens */
+  }
+
+  .horizontal-nav a {
+    padding: 5px; /* Further decrease padding for very small screens */
+  }
 }
 

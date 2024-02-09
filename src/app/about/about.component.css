@@ -16,6 +16,21 @@
     margin-left:100px;
     margin-right:200px;
 }
+
+@media screen and (max-width: 768px) {
+  .bio, .bio-detail {
+      margin: 10px; /* Adjust margins for smaller screens */
+      font-size: 16px; /* Decrease font size for smaller screens */
+  }
+}
+
+/* Media queries for even smaller screens */
+@media screen and (max-width: 480px) {
+  .bio, .bio-detail {
+      margin: 5px; /* Further adjust margins for very small screens */
+      font-size: 14px; /* Decrease font size for very small screens */
+  }
+}
 .education{
     font-family:'Aptos Display';
     font-size:14px;
