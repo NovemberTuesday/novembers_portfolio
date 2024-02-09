@@ -18,8 +18,9 @@ const routes: Routes = [
   // Add more routes for other pages if needed
 ];
 
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })], // Enable hash-based routing here
   exports: [RouterModule]
 })
 
