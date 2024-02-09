@@ -1,0 +1,141 @@
+.bg-1 {
+  /* background-color: rgba(163, 127, 166, 0.926); */
+  background-color: rgba(124, 83, 126, 0.926);
+}
+
+.bg-2 {
+  background-color: #000000
+}
+
+.big-letter {
+  font-size: 28px;
+}
+
+.intro-heading {
+  font-family: 'Bradley Hand ITC';
+  font-size: 54px;
+  color: rgb(164, 44, 140);
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.text-over-image {
+  position: absolute;
+  top: 35%;
+  /* Adjust as needed */
+  left: 33%;
+  /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  font-family: 'Gabriola';
+  font-size: 22px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 80px;
+  z-index: 1;
+  /* Ensure it's above the image */
+}
+
+.para-1 {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.para-2 {
+  margin-top: 180px;
+  margin-left: 10px;
+  font-family: 'Bradley Hand ITC';
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(253, 213, 245);
+  font-weight: 100px;
+  opacity: 0;
+  transform: translateX(-100px);
+  /* Move from left to right */
+  animation: slide-in 6s forwards, fade 3s forwards;
+  /* Apply animations */
+}
+
+
+/* Keyframes for slide-in animation */
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+    /* Move to original position */
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.self-img {
+  height: 470px;
+  width: 370px;
+  border-radius: 50%;
+
+}
+
+.fade-in {
+  opacity: 0;
+  /* Start with 0 opacity */
+  transition: opacity 3s ease-in-out;
+  /* Transition for smooth fade */
+}
+
+/* Set fade-in animation when the class is added */
+.fade-in.fade-in-active {
+  opacity: 1;
+  /* Change opacity to 1 for fade-in effect */
+}
+
+nav {
+  background-color: rgba(163, 127, 166, 0.926);
+  /* Background color for the nav */
+  height: 4%;
+  padding-left: 120px;
+}
+
+.horizontal-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-nav li {
+  margin-top: 10px;
+  margin-right: 25px;
+  /* Adjust the spacing between nav items */
+  margin-left: 20px;
+}
+
+.horizontal-nav li:first-child {
+  margin-left: 20px;
+  /* Remove margin from the last item */
+}
+
+.horizontal-nav a {
+  font-family: 'Ink Free';
+  font-size: 18px;
+  text-decoration: none;
+  color: #fefcfc;
+  /* Default link color */
+  padding: 20px;
+  /* Adjust padding as needed */
+}
+
+/* Styles for active link */
+.horizontal-nav a.active-link {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+  /* Change active link color to black */
+}
+
+.horizontal-nav a:hover {
+  color: #000;
+  /* Change color on hover */
+}
+

@@ -1,0 +1,77 @@
+.bio{
+    margin-top:20px;
+    margin-left:100px;
+    /* font-family:'Bradley Hand ITC'; */
+    font-family:'Ink Free';
+    font-size:18px;
+    font-weight: bold;
+    color: white;
+}
+
+.bio-detail{
+    /* font-family:'Gabriola'; */
+    font-family:'Aptos Display';
+    font-size:14px;
+    color: white;
+    margin-left:100px;
+    margin-right:200px;
+}
+.education{
+    font-family:'Aptos Display';
+    font-size:14px;
+    color: white;
+    fill:white;
+}
+.education:hover {
+    font-weight: bold;
+    color: #000;
+    fill: #010101;
+
+  }
+
+.bhub{
+    font-family:'Ink Free';
+    font-size:18px;
+    color: white;
+    fill:  white;
+    font-weight: bold;
+}
+
+.bhub:hover {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    fill: #010101;
+
+  }
+
+.animate__animated {
+    animation-duration: 1s;
+  }
+
+  .animate__fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 1;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.animate__animated_2{
+    animation-duration: 3s;
+}
+
+
+
+.animate__animated_3{
+    animation-duration: 5s;
+}
+  
+ 
