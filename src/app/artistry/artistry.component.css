@@ -79,8 +79,8 @@
    
   }
   .work-picture{
-    height: 90px;
-    width: 150px;
+    height: 96px;
+    width: 146px;
     
     border-radius: 5%;
     border-style:solid;
@@ -145,7 +145,7 @@
 
 .image-container:hover .work-picture{
     transform: scale(1);
-    height: 380px;
+    height: 385px;
     width: 620px;
     filter: brightness(100%);
     position:fixed;
